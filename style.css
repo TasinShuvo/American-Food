@@ -1,0 +1,535 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.top-bar {
+  background-color: darkgreen;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.input-png-images {
+  display: flex;
+  align-items: center;
+}
+
+#search-box {
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: darkgreen;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  padding: 7px 0px;
+}
+
+#search-box::placeholder {
+  color: white;
+}
+
+.search-icon {
+  height: 20px;
+  margin-left: -20px;
+  cursor: pointer;
+}
+
+.company-logo {
+  height: 40px;
+}
+
+.user-enter {
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.wish-icon {
+  height: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+  margin-bottom: -15px;
+}
+
+.cart-icon {
+  height: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: -15px;
+}
+
+.navigation {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.menu-icon {
+  height: 40px;
+  opacity: 0;
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: darkgreen;
+  font-size: 17px;
+  text-decoration: none;
+  margin-right: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.top-content {
+  background-image: url(images/vegetables.png);
+  height: 135vh;
+  width: 100%;
+  background-position: center;
+  color: darkgreen;
+  position: relative;
+}
+
+.content-wrap {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+.food-text {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.food-su {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.line {
+  background-color: darkgreen;
+  width: 300px;
+  height: 1px;
+  margin: 10px 0;
+}
+
+.about-company {
+  width: 360px;
+  margin-bottom: 30px;
+}
+
+.order-button {
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  padding: 17px 30px;
+  font-size: 17px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-right: 10px;
+}
+
+.order-button a {
+  color: white;
+}
+
+.arrow-pic {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.about-bottom-wrap {
+  padding: 0 40px;
+  margin-bottom: 80px;
+}
+
+.about-down-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-section {
+  margin-top: 80px;
+  position: relative;
+}
+
+.about-us-watermark {
+  color: darkgreen;
+  font-size: 70px;
+  font-weight: bold;
+  opacity: 0.3;
+  text-align: center;
+}
+
+.about-text {
+  color: darkgreen;
+  font-size: 40px;
+  font-weight: 600;
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.about-bottom-text {
+  color: darkgreen;
+  width: 400px;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.thy-food {
+  color: darkgreen;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  width: 600px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.thy-food-detls,
+.some-extra-det {
+  color: darkgreen;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.foody-wrap {
+  position: relative;
+}
+
+.foody-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: darkgreen;
+  opacity: 0.4;
+}
+
+.foody-wrap::after {
+  content: "";
+  background-image: url(images/youtube.png);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  bottom: 0;
+  left: 43%;
+  cursor: pointer;
+}
+
+.line-up-down {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 150px;
+  height: 150px;
+  border: 4px solid darkgreen;
+  border-right: none;
+  border-bottom: none;
+}
+
+.foody-pic {
+  height: 300px;
+  color: darkgreen;
+}
+
+.food-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  color: darkgreen;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.price {
+  margin-left: 245px;
+}
+
+.menu-detls {
+  color: darkgreen;
+  width: 500px;
+  margin-bottom: 15px;
+}
+
+.item-food-pic {
+  height: 200px;
+}
+
+.buy-now-button {
+  background-color: darkgreen;
+  border: none;
+  padding: 10px 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.buy-now-button a {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.discount-card {
+  background-image: url(images/shape.png);
+  margin-top: 80px;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  padding: 0 60px;
+  margin-bottom: 80px;
+}
+
+.special-text {
+  color: darkgreen;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.discount-percent {
+  color: darkgreen;
+  font-size: 35px;
+  margin-bottom: 6px;
+}
+
+.all-product-text {
+  color: darkgreen;
+  letter-spacing: 10px;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.discount-detils {
+  color: darkgreen;
+  width: 390px;
+  margin-bottom: 25px;
+}
+
+.discover-button {
+  background-color: darkgreen;
+  padding: 13px 25px;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.discover-button a {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.div-ver-center {
+  display: flex;
+  align-items: center;
+  height: 60vh;
+}
+
+.price-card {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 20px;
+  padding: 0 170px;
+  margin-bottom: 80px;
+}
+
+.card {
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+.basic-detils {
+  background-color: green;
+  color: white;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.basic-text {
+  font-size: 30px;
+}
+
+.price-product {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.chicken-etc-f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 240px;
+}
+
+.food-pa {
+  color: green;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.buy-now-button-sec {
+  background-color: darkgreen;
+  border: none;
+  padding: 10px 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 20px;
+}
+
+.buy-now-button-sec a {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.last-discount-card {
+  background-image: url(images/foods-etc.png);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  padding: 0 60px;
+  margin-bottom: 80px;
+}
+
+.div-ver-center-sec {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: right;
+  height: 60vh;
+}
+
+.blog-down-line {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  height: 280px;
+  column-gap: 30px;
+  padding: 0 160px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+}
+
+.title-blog {
+  color: darkgreen;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.blog-wrap {
+  background-color: rgb(241, 241, 241);
+  padding: 18px 10px;
+  height: 281px;
+}
+
+.blog-para {
+  color: darkgreen;
+  width: 270px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.read-button {
+  background-color: darkgreen;
+  border: none;
+  padding: 7px 13px;
+  font-size: 14px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.read-button a {
+  color: white;
+}
+
+.footer-design {
+  background-color: darkgreen;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.company-logo-sec {
+  height: 80px;
+  margin-bottom: 17px;
+}
+
+.american-food-text {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.best-test-food {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.social-icon {
+  height: 30px;
+  margin-left: 7px;
+  margin-bottom: 25px;
+}
+
+.your-site-text {
+  color: white;
+  font-size: 27px;
+  font-weight: 500;
+}
